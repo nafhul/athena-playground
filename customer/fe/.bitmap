@@ -1,0 +1,64 @@
+{
+  "apps/my-nextjs-app": {
+    "name": "apps/my-nextjs-app",
+    "scope": "",
+    "version": "",
+    "defaultScope": "na-athena.athena",
+    "mainFile": "index.ts",
+    "rootDir": "athena/apps/my-nextjs-app",
+    "config": {
+      "teambit.envs/envs": {
+        "env": "na-athena.athena/envs/my-nextjs-env"
+      },
+      "teambit.dependencies/dependency-resolver": {},
+      "teambit.harmony/application": {},
+      "teambit.component/dev-files": {},
+      "teambit.preview/preview": {},
+      "teambit.compositions/compositions": {},
+      "teambit.docs/docs": {},
+      "teambit.pipelines/builder": {},
+      "teambit.component/forking": {
+        "forkedFrom": {
+          "scope": "bitdev.nextjs",
+          "name": "examples/my-nextjs-app",
+          "version": "0.1.7"
+        }
+      },
+      "na-athena.athena/envs/my-nextjs-env": {}
+    }
+  },
+  "envs/my-nextjs-env": {
+    "name": "envs/my-nextjs-env",
+    "scope": "",
+    "version": "",
+    "defaultScope": "na-athena.athena",
+    "mainFile": "index.ts",
+    "rootDir": "athena/envs/my-nextjs-env",
+    "config": {
+      "teambit.dependencies/dependency-resolver": {
+        "policy": {
+          "dependencies": {
+            "eslint": "7.32.0"
+          }
+        }
+      },
+      "teambit.envs/env": {},
+      "teambit.envs/envs": {
+        "env": "teambit.envs/env"
+      },
+      "teambit.component/dev-files": {},
+      "teambit.preview/preview": {},
+      "teambit.compositions/compositions": {},
+      "teambit.docs/docs": {},
+      "teambit.pipelines/builder": {},
+      "teambit.component/forking": {
+        "forkedFrom": {
+          "scope": "bitdev.nextjs",
+          "name": "examples/my-nextjs-env",
+          "version": "0.1.7"
+        }
+      }
+    }
+  },
+  "$schema-version": "17.0.0"
+}
